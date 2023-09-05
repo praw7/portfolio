@@ -1,6 +1,5 @@
 /*=============== FILTERS TABS ===============*/
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('[data-target]'), tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {

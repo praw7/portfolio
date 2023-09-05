@@ -4,18 +4,10 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /*
-        Blue: hsl(207, 90%, 61%)
-        Purple: hsl(250, 66%, 75%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-    */
 
     --hue: 207;
     --sat: 90%;
     --lig: 61%;
-
     --first-color: hsl(var(--hue), var(--sat), var(--lig));
     --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
     --title-color: hsl(var(--hue), 12%, 15%);
@@ -27,12 +19,12 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Poppins", sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -40,8 +32,8 @@
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
     }
 }
 
@@ -57,12 +49,10 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: 0.3s; /* For animation dark mode */
+    transition: .3s; /* For animation dark mode */
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: var(--title-color);
     font-weight: 600;
 }
@@ -81,13 +71,52 @@ img {
 }
 
 /*=============== THEME ===============*/
+.change-theme {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme {
+    --title-color: hsl(var(--hue), 12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --body-color: hsl(var(--hue), 40%, 8%);
+    --container-color: hsl(var(--hue), 24%, 12%);
+}
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
+
+.dark-theme .button__gray {
+    background-color: var(--container-color);
+}
+
+.dark-theme .button__gray:hover {
+    background-color: hsl(var(--hue), 24%, 16%);
+}
+
+.dark-theme .filters__content {
+    background-color: var(--container-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background-color: hsl(var(--hue), 8%, 16%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--hue), 8%, 24%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--hue), 8%, 32%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -102,15 +131,9 @@ img {
 }
 
 /*=============== PROFILE ===============*/
-
-
 .profile {
     position: relative;
     padding-top: 3.5rem;
-}
-
-.container {
-    margin: auto;
 }
 
 .profile__container {
@@ -213,7 +236,6 @@ img {
 }
 
 /*=============== BUTTONS ===============*/
-
 .button {
     display: inline-flex;
     align-items: center;
@@ -248,7 +270,7 @@ img {
     background-color: var(--text-color-light);
 }
 
-/*=============== FILTERS TABS ===============*/
+/*=============== FILTERS TABS===============*/
 .filters__content {
     margin: 2rem 0 2.5rem;
     background-color: var(--text-color-lighten);
@@ -371,11 +393,11 @@ img {
 }
 
 /* Hide and show projects & skills */
-/*.filters [data-content] {*/
-/*    display: none;*/
-/*}*/
+.filters [data-content] {
+    display: none;
+}
 
-.filters__active [data-content] {
+.filters__active[data-content] {
     display: grid;
 }
 
@@ -383,7 +405,6 @@ img {
 .filter-tab-active {
     background-color: var(--body-color);
 }
-
 
 /*=============== FOOTER ===============*/
 .footer__copy {
@@ -402,8 +423,8 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
     background-color: hsl(var(--hue), 8%, 54%);
+    border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -411,8 +432,113 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/* small mobile*/
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .profile__info {
+        column-gap: 1.5rem;
+    }
+
+    .profile__buttons {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .skills__box {
+        column-gap: 1rem;
+    }
+}
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+    .projects__content {
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
+
+    .filters__content {
+        width: 332px;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .projects__content,
+    .skills__content {
+        grid-template-columns: repeat(2, 332px);
+    }
+
+    .skills__content {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
 
 /* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .change-theme {
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .profile {
+        padding-top: 4rem;
+    }
+
+    .profile__border {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 1rem;
+    }
+
+    .profile__hz {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile__hz img {
+        width: 110px;
+    }
+
+    .profile__profession {
+        margin-bottom: 1.5rem;
+    }
+
+    .profile__info {
+        column-gap: 3rem;
+    }
+
+    .profile__info-description {
+        font-size: var(--small-font-size);
+    }
+
+    .profile__buttons {
+        column-gap: 2rem;
+    }
+
+    .projects__content {
+        gap: 2rem 3rem;
+    }
+
+    .projects__modal {
+        padding: 1.5rem;
+    }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+        margin-bottom: 2.5rem;
+    }
+
+    .footer__copy {
+        margin: 4.5rem 0 2.5rem;
+    }
+}

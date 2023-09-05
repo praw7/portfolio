@@ -2,4 +2,4 @@
 my portfolio :)
 
 
-inspired by @[bedimcode] (https://github.com/bedimcode)
+inspired by @ [bedimcode] (https://github.com/bedimcode)

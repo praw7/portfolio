@@ -109,6 +109,10 @@ img {
     padding-top: 3.5rem;
 }
 
+.container {
+    margin: auto;
+}
+
 .profile__container {
     row-gap: 2rem;
 }
@@ -367,8 +371,19 @@ img {
 }
 
 /* Hide and show projects & skills */
+.filters [data-content] {
+    display: none;
+}
+
+.filters__active [data-content] {
+    display: grid;
+}
 
 /* Activate button filter */
+.filter-tab-active {
+    background-color: var(--body-color);
+}
+
 
 /*=============== FOOTER ===============*/
 

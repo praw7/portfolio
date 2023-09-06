@@ -12,25 +12,23 @@
     />
 
     <!--=============== REMIX ICONS ===============-->
-    <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-            rel="stylesheet"
-    />
-    <link
-            crossorigin="anonymous"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            referrerpolicy="no-referrer"
-            rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          referrerpolicy="no-referrer" rel="stylesheet"
     />
     <!--=============== CSS ===============-->
-    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <!--    <link href="assets/css/styles.css" rel="stylesheet"/>-->
+    <link href="assets/css/styles.css" rel="stylesheet">
 
     <title>Hubert Zawisza</title>
 </head>
 <body>
 <!--=============== HEADER PROFILE ===============-->
 <header class="profile container">
+
+    <!-- THEME -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
     <div class="profile__container grid">
         <div class="profile__data">
@@ -93,20 +91,30 @@
     <section class="filters container">
         <!--=============== FILTERS TABS ===============-->
         <ul class="filters__content">
-            <button class="filters__button filter-tab-active" data-target="#projects">Projects</button>
+            <button
+                    class="filters__button filter-tab-active"
+                    data-target="#projects"
+            >
+                Projects
+            </button>
             <button class="filters__button" data-target="#skills">Skills</button>
         </ul>
 
         <div class="filters__sections">
             <!--=============== PROJECTS ===============-->
-            <div class="projects__content grid filters__active" data-content id="projects">
+            <div
+                    class="projects__content grid filters__active"
+                    data-content
+                    id="projects"
+            >
                 <article class="projects__card">
-                    <img alt="" class="projects__img" src="assets/img/project1.jpg">
+                    <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                    <img alt="" class="projects__img" src="assets/img/project1.jpg"/>
 
                     <div class="projects__modal">
                         <div>
                             <span class="projects__subtitle">Web</span>
-                            <h3 class="projects__title">Portfolio Website</h3>
+                            <h3 class="projects__title">Payment Site</h3>
                             <a class="projects__button button button__small" href="#">
                                 <i class="ri-link"></i>
                             </a>
@@ -115,12 +123,12 @@
                 </article>
 
                 <article class="projects__card">
-                    <img alt="" class="projects__img" src="assets/img/project1.jpg">
+                    <img alt="" class="projects__img" src="assets/img/project3.jpg"/>
 
                     <div class="projects__modal">
                         <div>
                             <span class="projects__subtitle">Web</span>
-                            <h3 class="projects__title">Portfolio Website</h3>
+                            <h3 class="projects__title">Portfolio website</h3>
                             <a class="projects__button button button__small" href="#">
                                 <i class="ri-link"></i>
                             </a>
@@ -129,12 +137,12 @@
                 </article>
 
                 <article class="projects__card">
-                    <img alt="" class="project__img" src="assets/img/project2.jpg">
+                    <img alt="" class="projects__img" src="assets/img/project3.jpg"/>
 
                     <div class="projects__modal">
                         <div>
-                            <span class="projects__subtitle">Web</span>
-                            <h3 class="projects__title">Portfolio Website</h3>
+                            <span class="projects__subtitle">Movil</span>
+                            <h3 class="projects__title">Fast food app</h3>
                             <a class="projects__button button button__small" href="#">
                                 <i class="ri-link"></i>
                             </a>
@@ -143,12 +151,26 @@
                 </article>
 
                 <article class="projects__card">
-                    <img alt="" class="projects__img" src="assets/img/project3.jpg">
+                    <img alt="" class="projects__img" src="assets/img/project4.jpg"/>
 
                     <div class="projects__modal">
                         <div>
-                            <span class="projects__subtitle">Web</span>
-                            <h3 class="projects__title">Portfolio Website</h3>
+                            <span class="projects__subtitle">Movil</span>
+                            <h3 class="projects__title">Travel app</h3>
+                            <a class="projects__button button button__small" href="#">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img alt="" class="projects__img" src="assets/img/project5.jpg"/>
+
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Design</span>
+                            <h3 class="projects__title">Music app design</h3>
                             <a class="projects__button button button__small" href="#">
                                 <i class="ri-link"></i>
                             </a>
@@ -156,17 +178,17 @@
                     </div>
                 </article>
             </div>
+
             <!--=============== SKILLS ===============-->
             <div class="skills__content grid" data-content id="skills">
                 <div class="skills__area">
-                    <h3 class="skills__title">
-                        Pensions Administrator
-                    </h3>
+                    <h3 class="skills__title">Frontend Developer</h3>
 
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
                                     <h3 class="skills__name">HTML</h3>
                                     <span class="skills__level">Basic</span>
@@ -175,22 +197,27 @@
 
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
                                     <h3 class="skills__name">CSS</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
+
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
-                                    <h3 class="skills__name">Javascript</h3>
+                                    <h3 class="skills__name">JavaScript</h3>
                                     <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
                                     <h3 class="skills__name">React</h3>
                                     <span class="skills__level">Intermediate</span>
@@ -199,13 +226,16 @@
 
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
                                     <h3 class="skills__name">Bootstrap</h3>
                                     <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
+
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
                                     <h3 class="skills__name">Git</h3>
                                     <span class="skills__level">Intermediate</span>
@@ -214,56 +244,55 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="skills__area">
-                    <h3 class="skills__title">
-                        Pensions Administrator
-                    </h3>
+                    <h3 class="skills__title">Backend Developer</h3>
 
                     <div class="skills__box">
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
+
                                 <div>
-                                    <h3 class="skills__name">HTML</h3>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
                                     <span class="skills__level">Basic</span>
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <i class="ri-checkbox-circle-line"></i>
-                                <div>
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__level">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <i class="ri-checkbox-circle-line"></i>
-                                <div>
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="ri-checkbox-circle-line"></i>
-                                <div>
-                                    <h3 class="skills__name">React</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
 
-                            <div class="skills__data">
-                                <i class="ri-checkbox-circle-line"></i>
                                 <div>
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <i class="ri-checkbox-circle-line"></i>
-                                <div>
-                                    <h3 class="skills__name">Git</h3>
+                                    <h3 class="skills__name">Node Js</h3>
                                     <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
@@ -271,7 +300,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </main>
@@ -284,7 +312,7 @@
 </footer>
 
 <!--=============== SCROLLREVEAL ===============-->
-<script src=""></script>
+<script src="assets/js/scrollreveal.min.js"></script>
 
 <!--=============== MAIN JS ===============-->
 <script src="assets/js/main.js"></script>

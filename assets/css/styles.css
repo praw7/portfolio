@@ -188,6 +188,9 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: 500;
   color: var(--text-color);
+}
+
+.webdev {
   margin-bottom: 1rem;
 }
 
@@ -208,7 +211,7 @@ body.dark-theme {
 }
 
 .profile__info {
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
   column-gap: 2.5rem;
 }
@@ -513,7 +516,8 @@ body.dark-theme {
   .profile__hz img {
     width: 110px;
   }
-  .profile__profession {
+
+  .webdev {
     margin-bottom: 1.5rem;
   }
   .profile__info {

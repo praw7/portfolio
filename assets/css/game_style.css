@@ -133,6 +133,7 @@ body.dark-theme {
 .grid {
   display: grid;
   gap: 1.5rem;
+  margin-top: 10%;
 }
 
 /*=============== PROFILE ===============*/
@@ -311,6 +312,7 @@ body.dark-theme {
 }
 
 /*=============== PROJECTS ===============*/
+
 .projects__card {
   position: relative;
   border-radius: 1rem;

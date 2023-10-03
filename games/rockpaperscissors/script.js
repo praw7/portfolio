@@ -42,5 +42,26 @@ optionImages.forEach((image, index) => {
     let cpuValue = ["R", "P", "S"][randomNumber];
 
     //* Assign a letter value to the clicked option (based on index)
+    let userValue = ["R", "P", "S"][index];
+
+    //* Create an object with all possible outcomes
+    let outcomes = {
+      RR: "Draw",
+      RP: "Cpu",
+      RS: "User",
+      PP: "Draw",
+      PR: "User",
+      PS: "Cpu",
+      SS: "Draw",
+      SR: "Cpu",
+      SP: "User",
+    };
+
+    //* Look up the outcome value based on user and CPU options
+    let outcomeValue = outcomes[userValue + cpuValue];
+
+    //* Display the result
+    result.textContent =
+      userValue === cpuValue ? "Match Draw" : `${outcomeValue} Won!!`;
   });
 });

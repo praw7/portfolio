@@ -83,3 +83,10 @@ body {
   font-size: 1.235rem;
   margin-top: 1rem;
 }
+
+.result_images p {
+  color: #7d2ae8;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}

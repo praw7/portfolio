@@ -312,6 +312,20 @@ img {
   bottom: 0;
 }
 
+.mess {
+  filter: brightness(30%);
+  pointer-events: none;
+}
+
+.incoming {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
 /*=============== SKILLS ===============*/
 .skills__content {
   row-gap: 3.5rem;

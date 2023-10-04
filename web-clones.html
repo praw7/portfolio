@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      href="assets/img/icons8-workstation-16.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <!--=============== CSS ===============-->
+    <!--    <link href="assets/css/styles.css" rel="stylesheet"/>-->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/web_clones.css" rel="stylesheet" />
+
+    <title>Hubert Zawisza</title>
+  </head>
+  <body>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <!-- <ul class="filters__content">
+          <button
+            class="filters__button filter-tab-active"
+            data-target="#projects"
+          >
+            Projects
+          </button>
+          <button class="filters__button" data-target="#skills">Skills</button>
+        </ul> -->
+
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
+          <div
+            class="projects__content grid filters__active"
+            data-content
+            id="projects"
+          >
+            <article class="projects__card">
+              <img src="./assets/img/yt.jpeg" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Youtube clone</span>
+                  <h3 class="projects__title">React JS</h3>
+
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-play-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="projects__card">
+              <img
+                src="./assets/img/messenger.jpg"
+                alt=""
+                class="projects__img mess"
+              />
+              <div class="incoming">
+                <p>Coming soon...</p>
+              </div>
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Messenger clone</span>
+                  <h3 class="projects__title">React JS</h3>
+
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-play-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <span class="footer__copy">
+        &#169; Hubert Zawisza. All rights reserved
+      </span>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

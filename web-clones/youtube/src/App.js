@@ -8,7 +8,7 @@ import {
   VideoDetail,
 } from "./components";
 
-const app = () => (
+const App = () => (
   <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
@@ -22,4 +22,4 @@ const app = () => (
   </BrowserRouter>
 );
 
-export default app;
+export default App;

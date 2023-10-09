@@ -3,9 +3,7 @@ import React from "react";
 
 import { categories } from "../utils/constants";
 
-const selectedCategory = "New";
-
-const Sidebar = () => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
     direction="row"
     sx={{

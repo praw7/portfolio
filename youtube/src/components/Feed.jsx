@@ -1,8 +1,8 @@
-import { Box, Stack, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { Box, Stack, Typography } from '@mui/material';
 
 import { fetchFromAPI } from '../utils/fetchFromAPI';
-import { Sidebar, Videos } from './';
+import { Videos, Sidebar } from './';
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState('New');
@@ -35,7 +35,7 @@ const Feed = () => {
           variant='body2'
           sx={{ mt: 1.5, color: '#fff' }}
         >
-          Copyright © 2022 JSM Media
+          Copyright © 2023 Hubert Zawisza
         </Typography>
       </Box>
 
